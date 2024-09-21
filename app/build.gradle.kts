@@ -29,6 +29,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    externalNativeBuild {
+        cmake {
+         version = "3.25.1"
+        }
+    }
     
     kotlinOptions {
         jvmTarget = "17"
