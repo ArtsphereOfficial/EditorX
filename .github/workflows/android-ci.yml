@@ -47,7 +47,7 @@ jobs:
 
     # Step 7: Archive the Debug APK
     - name: Archive Debug APK
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
@@ -62,7 +62,7 @@ jobs:
 
     # Step 10: Archive the Release APK
     - name: Archive Release APK
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: app-release
         path: app/build/outputs/apk/release/app-release.apk
@@ -78,7 +78,7 @@ jobs:
 
     # Step 2: Download the Release APK
     - name: Download Release APK
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: app-release
         path: .
