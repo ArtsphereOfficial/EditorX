@@ -30,15 +30,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
- externalNativeBuild {
-        cmake {
-            path("src/main/cpp/CMakeLists.txt")          
-            // try to comment the version or specify the your cmake version
-            // note modify cmake version in libs.versions.toml file
-            //version = libs.versions.cmake.get()
-        }
-    }
-
     kotlinOptions {
         jvmTarget = "17"
     }
