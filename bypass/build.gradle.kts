@@ -22,14 +22,15 @@ android {
             }
         }
     }
-    
-    externalNativeBuild {
+
+ externalNativeBuild {
         cmake {
-            path("src/main/cpp/CMakeLists.txt")
-            version = libs.versions.cmake.get()
+            path("src/main/cpp/CMakeLists.txt")          
+            // try to comment the version or specify the your cmake version
+            // note modify cmake version in libs.versions.toml file
+            //version = libs.versions.cmake.get()
         }
     }
-
     buildTypes {
         release {
             isMinifyEnabled = false
