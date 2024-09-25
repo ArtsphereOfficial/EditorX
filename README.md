@@ -1,5 +1,3 @@
-# xedit-app
-
 Android Code Editor
 
 Currently a lot of features work in progress, 
